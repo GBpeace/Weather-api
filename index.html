@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weatherapp</title>
+    <script src="https://kit.fontawesome.com/92e35f1c61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" name="text" class="search-bar" placeholder="Search">
+            <button id="add" onclick="getData()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="weather">
+            <h2>Weather in <span class="city">Mumbai</span></h2>
+            <h1 class="temp"></h1>
+            <div class="main"></div>
+            <img class="icon">
+            <div class="discription"></div>
+            <div>humidity:&nbsp<span class="humidity"></span></div>
+            <div><span class="wind">wind speed:</span>&nbsp<span class="winddata"></span></div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>
